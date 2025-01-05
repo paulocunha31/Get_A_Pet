@@ -1,0 +1,180 @@
+
+
+.section {
+  padding: 20px 0;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.titleRow h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #0044cc;
+}
+
+.titleRow a {
+  text-decoration: none;
+  background-color: #16479d;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: 1px solid #16479d;
+  text-align: center;
+}
+.titleRow a:hover {
+  background-color: transparent;
+  color: #16479d;
+}
+
+.petList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pet_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  flex-wrap: wrap;
+}
+
+.petImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.petDetails {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.petName {
+  font-weight: bold;
+  color:  #16479d;
+  margin-right: 15px;
+}
+
+.petStatus {
+  color: #666;
+  font-size: 14px;
+}
+
+.action_buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.action_buttons button,
+.action_buttons a {
+  background: none;
+  border: 1px solid  #16479d;
+  color:  #16479d;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.action_buttons p {
+  color: #25b456;
+  font-weight: bold;
+}
+
+.editButton:hover {
+  background-color:  #16479d;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #ff4d4d;
+  color: white;
+  border: 1px solid #ff4d4d;
+}
+
+.action_buttons .conclude_btn {
+  color: #25b456;
+  border-color: #25b456;
+}
+
+.action_buttons .conclude_btn:hover {
+  color: #fff;
+  background-color: #25b456;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .titleRow h2 {
+    font-size: 20px;
+  }
+
+  .addButton {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .petDetails {
+    font-size: 14px;
+  }
+
+  .actionButtons button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .titleRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .titleRow a {
+    width: 100%;
+  
+  }
+
+  .pet_item {
+    flex-direction: column;
+    border: 1px solid rgb(211, 218, 221);
+    border-radius: 8px;
+    text-align: center;
+    gap: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .1);
+  }
+
+  .action_buttons {
+    flex-direction: column;
+    max-width: 90%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,34 @@
+.pet_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  justify-content: center;
+  margin: 1.5em 0 0.5em;
+  gap: 15px;
+}
+
+.pet_card {
+  border: 1px solid rgb(211, 218, 221);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 144px;
+  padding: 8px 8px 12px;
+  width: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+}
+.pet_card p {
+  margin-top: 0.5em;
+  color: rgb(105, 114, 119);
+  font-size: 14px;
+  line-height: 14px;
+  white-space: normal;
+}
+.pet_card_image {
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 100%;
+  margin-bottom: 1.2em;
+  border-radius: 8px;
+}
