@@ -12,7 +12,7 @@ function PetDetails() {
   const { id } = useParams();
   const { setFlashMessage } = userFlashMessage();
   const [token] = useState(localStorage.getItem("token") || "");
-  console.log(token);
+ 
 
   useEffect(() => {
     async function getPet() {

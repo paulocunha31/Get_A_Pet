@@ -54,7 +54,6 @@ export default function useAuth() {
       await authUser(data);
     } catch (error) {
       const errors = error.response?.data?.message;
-      console.log(errors);
       if (Array.isArray(errors) && errors.length > 0) {
         msgText = errors[0];
       } else {
